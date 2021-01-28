@@ -10,6 +10,8 @@ provider "azurerm" {
 resource "azurerm_resource_group" "training" {
   name     = "sccc-sentinel-resourcegroup"
   location = "East US"
+  
+  tags = {}
 }
 
 variable "vnet_address_spacing" {
