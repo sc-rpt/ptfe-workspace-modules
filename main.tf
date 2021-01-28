@@ -11,7 +11,9 @@ resource "azurerm_resource_group" "training" {
   name     = "sccc-sentinel-resourcegroup"
   location = "East US"
   
-  tags = {}
+  tags = {
+    "test" = "test"
+    }
 }
 
 variable "vnet_address_spacing" {
